@@ -5,7 +5,7 @@ Gets the data realted to id which need to send as a request to the API and retur
 
 #### Login
 
-```http
+```
   POST http://127.0.0.1:5000/login
 ```
 
@@ -16,7 +16,7 @@ Gets the data realted to id which need to send as a request to the API and retur
 
 #### Get item
 
-```http
+```
   POST http://127.0.0.1:5000/bigquery
 ```
 
@@ -26,7 +26,7 @@ Gets the data realted to id which need to send as a request to the API and retur
 
 #### Swagger Documentation urls
 
-```http
+```
    http://127.0.0.1:5000/swagger-ui
    http://127.0.0.1:5000/swagger
 ```
