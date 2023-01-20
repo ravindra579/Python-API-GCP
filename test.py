@@ -34,8 +34,8 @@ docs = FlaskApiSpec(app)
 app.config.update({
     'HOST_INFO':"redis-19210.c1.asia-northeast1-1.gce.cloud.redislabs.com",
     "REDIS_PORT":19210,
-    'REDIS_PASSWORD':"44qFEeWsnSS9nOdxitHtFRbnaZCsWd24",
-    "PRIVATE_KEY":"Ravindra@"
+    'REDIS_PASSWORD':"",
+    "PRIVATE_KEY":""
 })
 
 
