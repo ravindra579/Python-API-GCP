@@ -14,6 +14,9 @@ from flask_apispec.extension import FlaskApiSpec
 from flask_apispec.views import MethodResource
 from flask_apispec import marshal_with, doc, use_kwargs
 from apscheduler.schedulers.background import BackgroundScheduler
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)  # Flask app instance initiated
 CORS(app, support_credentials=True)
@@ -31,10 +34,10 @@ app.config.update({
 docs = FlaskApiSpec(app)
 
 app.config.update({
-    'HOST_INFO':"redis-19210.c1.asia-northeast1-1.gce.cloud.redislabs.com",
-    "REDIS_PORT":19210,
-    'REDIS_PASSWORD':"44qFEeWsnSS9nOdxitHtFRbnaZCsWd24",
-    "PRIVATE_KEY":"Ravindra@"
+    'HOST_INFO':os.getenv('HOST_INFO'),
+    "REDIS_PORT":os.getenv('REDIS_PORT'),
+    'REDIS_PASSWORD':os.getenv('REDIS_PASSWORD'),
+    "PRIVATE_KEY":os.getenv('PRIVATE_KEY')
 })
 
 
